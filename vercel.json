@@ -3,12 +3,12 @@
     {
       "source": "/",
       "has": [{"type": "header", "key": "x-vercel-ip-country", "value": "CN"}],
-      "destination": "/zh",
+      "destination": "/#/zh",
       "permanent": false
     },
     {
       "source": "/",
-      "destination": "/en",
+      "destination": "/#/en",
       "permanent": false
     }
   ],
