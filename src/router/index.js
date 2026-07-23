@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeZh from '../views/HomeZh.vue'
 import HomeEn from '../views/HomeEn.vue'
 import ResumeZh from '../views/ResumeZh.vue'
@@ -13,7 +13,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
 

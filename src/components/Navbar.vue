@@ -3,11 +3,11 @@
     <div class="nav-container">
       <div class="logo">{{ t.nav.logo }}</div>
       <div class="nav-links">
-        <a href="#about">{{ t.nav.about }}</a>
-        <a href="#skills">{{ t.nav.skills }}</a>
-        <a href="#projects">{{ t.nav.projects }}</a>
-        <a href="#experience">{{ t.nav.experience }}</a>
-        <a href="#strength">{{ t.nav.strengths }}</a>
+        <a href="#about" @click.prevent="scrollTo('about')">{{ t.nav.about }}</a>
+        <a href="#skills" @click.prevent="scrollTo('skills')">{{ t.nav.skills }}</a>
+        <a href="#projects" @click.prevent="scrollTo('projects')">{{ t.nav.projects }}</a>
+        <a href="#experience" @click.prevent="scrollTo('experience')">{{ t.nav.experience }}</a>
+        <a href="#strength" @click.prevent="scrollTo('strength')">{{ t.nav.strengths }}</a>
         <router-link :to="langLink" class="lang-link">{{ t.nav.langSwitch }}</router-link>
         <router-link :to="resumeLink" class="lang-link">{{ t.nav.resume }}</router-link>
       </div>
@@ -36,6 +36,14 @@ export default {
     },
     resumeLink() {
       return this.lang === 'zh' ? '/resume-zh' : '/resume-en'
+    }
+  },
+  methods: {
+    scrollTo(id) {
+      const el = document.getElementById(id)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 }
