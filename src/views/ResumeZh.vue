@@ -11,8 +11,8 @@
         <a href="https://github.com/xunmeng2002" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/xunmeng2002</a>
       </div>
       <div class="page-links">
-        <a href="/zh" class="page-link">中文主页</a>
-        <a href="/resume-en" class="page-link">English Resume</a>
+        <router-link to="/zh" class="page-link">中文主页</router-link>
+        <router-link to="/resume-en" class="page-link">English Resume</router-link>
       </div>
     </div>
 
