@@ -8,8 +8,8 @@
         <a href="#projects">{{ t.nav.projects }}</a>
         <a href="#experience">{{ t.nav.experience }}</a>
         <a href="#strength">{{ t.nav.strengths }}</a>
-        <a :href="langLink" class="lang-link">{{ t.nav.langSwitch }}</a>
-        <a :href="resumeLink" class="lang-link">{{ t.nav.resume }}</a>
+        <router-link :to="langLink" class="lang-link">{{ t.nav.langSwitch }}</router-link>
+        <router-link :to="resumeLink" class="lang-link">{{ t.nav.resume }}</router-link>
       </div>
     </div>
   </nav>
