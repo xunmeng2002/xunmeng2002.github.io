@@ -1,0 +1,213 @@
+/* src/assets/global.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem 3rem;
+}
+
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #2c7da0;
+  border-radius: 2px;
+}
+
+.about-text {
+  background: white;
+  border-radius: 24px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid #e9edf2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: white;
+  border-radius: 24px;
+  padding: 1.2rem 1.5rem;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #e9edf2;
+}
+
+.skill-category h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #1e4a6e;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: #f1f5f9;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.8rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  border: 1px solid #edf2f7;
+  transition: 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
+}
+
+.project-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 0.8rem;
+}
+
+.project-features {
+  font-size: 0.8rem;
+  color: #2c7da0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.project-link {
+  color: #2c7da0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  background: white;
+  border-radius: 20px;
+  border-left: 4px solid #2c7da0;
+  padding: 1rem 1.5rem;
+}
+
+.timeline-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-weight: 700;
+}
+
+.timeline-date {
+  font-size: 0.75rem;
+  color: #62748c;
+}
+
+.timeline-desc {
+  font-size: 0.85rem;
+  color: #2c3e4e;
+  margin-top: 0.3rem;
+}
+
+.strength-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.strength-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.2rem;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #e9edf2;
+}
+
+.strength-card i {
+  font-size: 2rem;
+  color: #2c7da0;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 750px) {
+  .hero-name {
+    font-size: 2.4rem;
+  }
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
