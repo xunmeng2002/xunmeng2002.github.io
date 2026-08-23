@@ -133,8 +133,8 @@
         <div class="section-title">开源项目</div>
         <div class="project-item">
           <div class="project-title">
-            📚 PersonalLib · C++20 高性能基础库
-            <a href="https://github.com/xunmeng2002/PersonalLib" target="_blank">github.com/xunmeng2002/PersonalLib</a>
+            📚 Spark · C++20 高性能基础库
+            <a href="https://github.com/xunmeng2002/Spark" target="_blank">github.com/xunmeng2002/Spark</a>
           </div>
           <div class="project-desc">
             专为高频/量化交易提供底层基础设施。包含四大模块：Core（日志/定时器/AOP/线程）、Network（跨平台TCP/共享内存，工厂模式自动适配Epoll/IOCP/Select，内置发布订阅与协议分帧）、TemplateLib（无锁环形缓冲区/对象池/队列，纯模板实现）、Serialization（JSON/Base64/CSV 及 GBK/UTF-8 编解码）。Protocol层统一I/O接口，业务与传输解耦，已应用于行情解码与回测系统。
@@ -142,11 +142,20 @@
         </div>
         <div class="project-item">
           <div class="project-title">
-            📁 内存数据库 – Mdb 
+            🗄️ DBAdapters · 统一数据库访问层
+            <a href="https://github.com/xunmeng2002/DBAdapters" target="_blank">github.com/xunmeng2002/DBAdapters</a>
+          </div>
+          <div class="project-desc">
+            基于 Spark 的多数据库访问层，作为 Mdb / QuantTrading 等项目的持久化底座。四种数据库（SQLite/DuckDB/MySQL/MariaDB）统一接口、一致读写；TableSchema → TypedTable 三层抽象，业务无需手写 SQL；AsyncDBWriter 异步写库，内存变更批量落盘、断线自动重连；DuckDB 向量化批量读取。
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">
+            🧠 内存数据库 – Mdb
             <a href="https://github.com/xunmeng2002/Mdb" target="_blank">github.com/xunmeng2002/Mdb</a>
           </div>
           <div class="project-desc">
-            自研高性能内存数据库，支持主键/唯一键/索引、表级读写锁及范围查询；通过日志同步机制实现与MariaDB/MySQL/SQLite/DuckDB的持久化交互，内置无锁对象池，加速数据库记录对象的分配与回收。
+            自研高性能内存数据库，支持主键/唯一键/索引、表级读写锁及范围查询；持久化层基于 DBAdapters，异步同步至 MariaDB/MySQL/SQLite/DuckDB，内置无锁对象池，加速数据库记录对象的分配与回收。
           </div>
         </div>
         <div class="project-item">
@@ -155,7 +164,7 @@
             <a href="https://github.com/xunmeng2002/QuantTrading" target="_blank">github.com/xunmeng2002/QuantTrading</a>
           </div>
           <div class="project-desc">
-            C++开发，集行情订阅（Ctp/深度行情）、Tick/Bar双模回测、模拟撮合引擎于一体；应用自研内存数据库实现行情持久化。
+            C++开发的专业量化系统：行情服务 MdOffer（CTP实时/深度行情，K线生成，内存库 + 异步持久化）、历史回测 BackTest（Parquet Tick/Bar 重放，逐日结算）、模拟交易 SimExchange（四种撮合引擎 + 内存数据库）。
           </div>
         </div>
       </div>

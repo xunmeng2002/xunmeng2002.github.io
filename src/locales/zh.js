@@ -17,7 +17,7 @@ export default {
     stats: [
       { number: '10+年', label: '金融IT经验' },
       { number: '5+', label: '核心项目负责人' },
-      { number: '2', label: '自研开源项目' }
+      { number: '4', label: '自研开源项目' }
     ],
     avatarChar: '张',
     contacts: [
@@ -50,7 +50,7 @@ export default {
     list: [
       {
         icon: '📚',
-        title: 'PersonalLib · C++20 高性能基础库',
+        title: 'Spark · C++20 高性能基础库',
         desc: '专为高频/量化交易提供底层基础设施。',
         features: [
           '四大模块：Core（日志/定时器/AOP/线程）、Network（跨平台TCP/共享内存，自动适配Epoll/IOCP/Select，内置发布订阅与协议分帧）',
@@ -58,20 +58,32 @@ export default {
           'Serialization：JSON/Base64/CSV 及 GBK/UTF-8 编解码',
           'Protocol层统一I/O接口，解耦业务与传输，已用于行情解码与回测系统'
         ],
-        link: 'https://github.com/xunmeng2002/PersonalLib'
+        link: 'https://github.com/xunmeng2002/Spark'
       },
       {
         icon: '🗄️',
+        title: 'DBAdapters · 统一数据库访问层',
+        desc: '基于 Spark 的多数据库访问层，Mdb / QuantTrading 等项目的持久化底座。',
+        features: [
+          '四种数据库统一接口：SQLite / DuckDB / MySQL / MariaDB 一致读写',
+          'TableSchema → TypedTable 三层抽象，业务无需手写 SQL',
+          'AsyncDBWriter 异步写库，内存变更批量落盘、断线自动重连',
+          'DuckDB 向量化批量读取，NULL 类型哨兵'
+        ],
+        link: 'https://github.com/xunmeng2002/DBAdapters'
+      },
+      {
+        icon: '🧠',
         title: '内存数据库 · Mdb',
         desc: '十多年经验沉淀的高性能内存数据库，已在多个生产系统使用。',
-        features: ['主键、唯一键、索引、表级读写锁', '基于主键/索引的范围查询', '日志同步至 MariaDB/MySQL/SQLite/DuckDB', '无锁对象池加速记录分配回收'],
+        features: ['主键、唯一键、索引、表级读写锁', '基于主键/索引的范围查询', '基于 DBAdapters 异步同步至 MariaDB/MySQL/SQLite/DuckDB', '无锁对象池加速记录分配回收'],
         link: 'https://github.com/xunmeng2002/Mdb'
       },
       {
         icon: '📊',
         title: 'QuantTrading · 量化系统',
         desc: '多市场、多策略的专业量化交易框架。',
-        features: ['行情：Ctp实时/深度行情，K线生成，持久化', '回测：Tick/Bar双模，逐日结算，多格式导出', '模拟交易：订单撮合引擎 + 内存数据库'],
+        features: ['行情服务 MdOffer：CTP 实时行情，K线生成，内存库 + 异步持久化', '回测 BackTest：Parquet Tick/Bar 重放，逐日结算', '模拟交易 SimExchange：四种撮合引擎 + 内存数据库'],
         link: 'https://github.com/xunmeng2002/QuantTrading'
       }
     ]

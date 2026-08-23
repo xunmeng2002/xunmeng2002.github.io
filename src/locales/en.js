@@ -18,7 +18,7 @@ export default {
     stats: [
       { number: '10+ yrs', label: 'FinTech Experience' },
       { number: '5+', label: 'Lead Projects' },
-      { number: '2', label: 'Open Source' }
+      { number: '4', label: 'Open Source' }
     ],
     avatarChar: 'KZ',
     contacts: [
@@ -51,7 +51,7 @@ export default {
     list: [
       {
         icon: '📚',
-        title: 'PersonalLib · C++20 High-Performance Foundation Library',
+        title: 'Spark · C++20 High-Performance Foundation Library',
         desc: 'Low-latency infrastructure for HFT/quant trading.',
         features: [
           '✓ Modules: Core (logging/timer/AOP/threading), Network (cross-platform TCP/shared memory, Epoll/IOCP/Select adapters, pub-sub, protocol framing)',
@@ -59,16 +59,28 @@ export default {
           '✓ Serialization: JSON/Base64/CSV, GBK/UTF-8 encoding/decoding',
           '✓ Protocol layer unifies I/O, decouples business from transport; used in market data decoding & backtesting'
         ],
-        link: 'https://github.com/xunmeng2002/PersonalLib'
+        link: 'https://github.com/xunmeng2002/Spark'
       },
       {
         icon: '🗄️',
+        title: 'DBAdapters · Unified Database Access Layer',
+        desc: 'Spark-based DB access layer; the persistence foundation for Mdb / QuantTrading.',
+        features: [
+          '✓ Unified interface across four DBs: SQLite / DuckDB / MySQL / MariaDB',
+          '✓ TableSchema → TypedTable abstraction, no hand-written SQL',
+          '✓ AsyncDBWriter: async persistence, batch flush, auto-reconnect',
+          '✓ DuckDB vectorized bulk reads with NULL sentinels'
+        ],
+        link: 'https://github.com/xunmeng2002/DBAdapters'
+      },
+      {
+        icon: '🧠',
         title: 'In-Memory Database · Mdb',
         desc: 'High-performance in-memory DB refined over a decade, used in production systems.',
         features: [
           '✓ Primary/unique keys, indexes, table-level read-write locks',
           '✓ Range queries based on primary keys/indexes',
-          '✓ Log sync to MariaDB/MySQL/SQLite/DuckDB',
+          '✓ Async sync to MariaDB/MySQL/SQLite/DuckDB via DBAdapters',
           '✓ Lock-free object pool for fast allocation'
         ],
         link: 'https://github.com/xunmeng2002/Mdb'
@@ -78,9 +90,9 @@ export default {
         title: 'QuantTrading · Quantitative System',
         desc: 'Multi-market, multi-strategy professional quant trading framework.',
         features: [
-          '✓ Market data: Ctp real-time/depth, K-line generation, persistence',
-          '✓ Backtesting: Tick/Bar dual modes, daily settlement, export',
-          '✓ Simulated trading: order matching engine + in-memory DB'
+          '✓ MdOffer market-data service: CTP real-time/depth, K-line generation, in-memory DB + async persistence',
+          '✓ BackTest: Parquet Tick/Bar replay, daily settlement',
+          '✓ SimExchange simulated trading: four matching engines + in-memory DB'
         ],
         link: 'https://github.com/xunmeng2002/QuantTrading'
       }

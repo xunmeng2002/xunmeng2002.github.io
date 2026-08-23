@@ -128,8 +128,8 @@
         <div class="section-title">Open Source Projects</div>
         <div class="project-item">
           <div class="project-title">
-            📚 PersonalLib · C++20 High-Performance Foundation Library
-            <a href="https://github.com/xunmeng2002/PersonalLib" target="_blank">github.com/xunmeng2002/PersonalLib</a>
+            📚 Spark · C++20 High-Performance Foundation Library
+            <a href="https://github.com/xunmeng2002/Spark" target="_blank">github.com/xunmeng2002/Spark</a>
           </div>
           <div class="project-desc">
             Low-latency infrastructure for HFT/quant trading. Four modules: Core (logging/timer/AOP/threading), Network (cross-platform TCP/shared memory with Epoll/IOCP/Select adapters, pub-sub, protocol framing), TemplateLib (lock-free ring buffer/object pool/queue, pure templates), Serialization (JSON/Base64/CSV, GBK/UTF-8 encoding). Protocol layer unifies I/O, decouples business from transport; used in market data decoding and backtesting.
@@ -137,11 +137,20 @@
         </div>
         <div class="project-item">
           <div class="project-title">
-            📁 In-Memory DB – Mdb 
+            🗄️ DBAdapters · Unified Database Access Layer
+            <a href="https://github.com/xunmeng2002/DBAdapters" target="_blank">github.com/xunmeng2002/DBAdapters</a>
+          </div>
+          <div class="project-desc">
+            Spark-based DB access layer, the persistence foundation for Mdb / QuantTrading. Unified interface across SQLite/DuckDB/MySQL/MariaDB; TableSchema → TypedTable abstraction with no hand-written SQL; AsyncDBWriter for async persistence, batch flush and auto-reconnect; DuckDB vectorized bulk reads.
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">
+            🧠 In-Memory DB – Mdb
             <a href="https://github.com/xunmeng2002/Mdb" target="_blank">github.com/xunmeng2002/Mdb</a>
           </div>
           <div class="project-desc">
-            High-performance in-memory DB with primary/unique keys, indexes, table-level locks, range queries. Log sync to MariaDB/MySQL/SQLite/DuckDB. Lock-free object pool.
+            High-performance in-memory DB with primary/unique keys, indexes, table-level locks, range queries. Persistence layer built on DBAdapters, async-synced to MariaDB/MySQL/SQLite/DuckDB. Lock-free object pool.
           </div>
         </div>
         <div class="project-item">
@@ -150,7 +159,7 @@
             <a href="https://github.com/xunmeng2002/QuantTrading" target="_blank">github.com/xunmeng2002/QuantTrading</a>
           </div>
           <div class="project-desc">
-            C++ quant framework: market data (CTP/depth), Tick/Bar backtesting, simulated matching engine. Uses in-memory DB for market data persistence.
+            C++ professional quant system: MdOffer market-data service (CTP real-time/depth, K-line generation, in-memory DB + async persistence), BackTest (Parquet Tick/Bar replay, daily settlement), SimExchange simulated trading (four matching engines + in-memory DB).
           </div>
         </div>
       </div>
