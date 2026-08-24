@@ -211,3 +211,53 @@ footer {
     gap: 1rem;
   }
 }
+
+/* 打印 / 另存为 PDF 专用样式 */
+@media print {
+  /* 隐藏顶部导航与页面切换链接，避免在每一页重复出现并遮挡顶部内容 */
+  nav,
+  .navbar,
+  .page-links {
+    display: none;
+  }
+
+  /* 导航隐藏后，回收其占位的顶部留白 */
+  .container {
+    padding-top: 2rem;
+  }
+
+  /* 简历卡片在打印时不渲染投影，避免输出脏影 */
+  .resume-container {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  /* 防止卡片 / 条目在分页时被一分为二 */
+  .hero,
+  .about-text,
+  .skill-category,
+  .skill-tag,
+  .project-card,
+  .timeline-item,
+  .strength-card,
+  .job-item,
+  .project-item,
+  .summary-text,
+  .skill-badge,
+  .strength-list li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 章节标题不与正文分离（避免标题孤立在页尾） */
+  .section-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* 保留背景色与渐变（默认打印会被浏览器丢弃） */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
