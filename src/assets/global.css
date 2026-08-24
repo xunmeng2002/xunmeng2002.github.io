@@ -221,9 +221,10 @@ footer {
     display: none;
   }
 
-  /* 导航隐藏后，回收其占位的顶部留白 */
+  /* 导航隐藏后，回收其占位的顶部留白；底部留白相应收紧 */
   .container {
     padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 
   /* 简历卡片在打印时不渲染投影，避免输出脏影 */
@@ -253,6 +254,16 @@ footer {
   .section-title {
     break-after: avoid;
     page-break-after: avoid;
+  }
+
+  /* 压缩页脚与上一节的间距，让页脚落入最后一页剩余空间，避免单独成页 */
+  .section {
+    margin-bottom: 1.5rem;
+  }
+
+  footer {
+    margin-top: 0;
+    padding: 1rem 2rem 0.5rem;
   }
 
   /* 保留背景色与渐变（默认打印会被浏览器丢弃） */

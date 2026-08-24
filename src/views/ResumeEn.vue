@@ -32,6 +32,8 @@
           <span class="skill-badge">Tick/Bar Backtesting & Simulated Matching</span>
           <span class="skill-badge">CUDA / C++20 Coroutines</span>
           <span class="skill-badge">Shared Memory / Lock-free Pool</span>
+          <span class="skill-badge">PyTorch Deep Learning (CNN/RNN/Attention)</span>
+          <span class="skill-badge">RNN Stock Price Prediction</span>
           <span class="skill-badge">CMake / Zabbix / Blazor / WPF</span>
         </div>
       </div>
@@ -170,6 +172,7 @@
           <li>Full-Stack FinTech · 10+ Years Trading Systems</li>
           <li>Low-Level Optimization (In-Memory DB, Shared Memory, Coroutines)</li>
           <li>Independent Delivery · 0-to-1 Project Lead</li>
+          <li>Deep Learning Practice · PyTorch (CNN/RNN/Attention)</li>
         </ul>
         <div style="margin-top: 10px; font-size:0.86rem; color:#2c5068;">
           ✔ End-to-end experience: market data, backtesting, trading, risk, settlement<br>
@@ -181,7 +184,7 @@
       <div class="section">
         <div class="section-title">Summary</div>
         <div class="summary-text">
-          Always worked in small to medium-sized FinTech companies. Broad technical stack, strong problem-solving skills, deep understanding of trading system business (trading, risk, account management).
+          Always worked in small to medium-sized FinTech companies. Broad technical stack, strong problem-solving skills, deep understanding of trading system business (trading, risk, account management). Recently systematically studied deep learning (PyTorch) with hands-on practice on regression, CNN and RNN, familiar with attention mechanisms, and built an RNN-based stock price prediction model.
         </div>
       </div>
       <hr>

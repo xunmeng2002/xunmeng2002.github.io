@@ -32,7 +32,7 @@ export default {
     title: '关于我',
     content: [
       '从理论物理转向量化金融，十多年来一直深耕交易系统研发。相信「简单清晰的技术能解决复杂的金融业务」，热爱底层性能优化，追求极致的系统延迟与吞吐。',
-      '曾在多家金融科技公司担任核心系统负责人，独立设计并交付了证券资管柜台、外盘柜台、风控系统等关键设施。目前专注于高性能计算、内存数据库以及算法交易框架的构建。',
+      '曾在多家金融科技公司担任核心系统负责人，独立设计并交付了证券资管柜台、外盘柜台、风控系统等关键设施。目前专注于高性能计算、内存数据库与算法交易框架，同时系统学习深度学习（PyTorch）：动手实践回归、CNN、RNN，了解注意力机制，并完成 RNN 股票价格预测实战。',
       '<strong>格言：</strong> 代码是逻辑的诗篇，系统是工程的交响。'
     ]
   },
@@ -42,7 +42,8 @@ export default {
       { name: '⚙️ 语言与数据库', tags: ['C++20/17', 'C#', 'Python', 'MySQL/SQLite/DuckDB', '自研内存DB'] },
       { name: '📈 量化/金融', tags: ['CTP/XTP/STEP', 'Tick/Bar回测', '模拟撮合', '风控引擎', '行情解码'] },
       { name: '⚡ 高性能计算', tags: ['CUDA', '协程', '共享内存', 'OpenCV', 'DAG调度'] },
-      { name: '🛠️ 工具/全栈', tags: ['CMake', 'Zabbix', 'Blazor/WPF', 'Qt', 'Thrift'] }
+      { name: '🛠️ 工具/全栈', tags: ['CMake', 'Zabbix', 'Blazor/WPF', 'Qt', 'Thrift'] },
+      { name: '🤖 深度学习/PyTorch', tags: ['PyTorch', 'CNN / RNN', '注意力机制', 'RNN股价预测'] }
     ]
   },
   projects: {
@@ -106,5 +107,12 @@ export default {
     ]
   },
   quote: '一直任职于中小型金融软件公司，技术栈全面，独立解决问题能力强，对交易系统业务理解深入。',
-  footer: '张开强 · 基于 Vue + Vite 部署在 Vercel'
+  footer: {
+    name: '张开强',
+    tagline: '基于 Vue + Vite 构建',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/xunmeng2002' },
+      { label: 'CSDN', url: 'https://blog.csdn.net/xunmeng2002' }
+    ]
+  }
 }

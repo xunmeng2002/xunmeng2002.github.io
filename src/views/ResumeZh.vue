@@ -35,6 +35,8 @@
           <span class="skill-badge">Tick/Bar回测 · 模拟撮合</span>
           <span class="skill-badge">CUDA / C++20协程</span>
           <span class="skill-badge">共享内存 / 无锁内存池</span>
+          <span class="skill-badge">PyTorch 深度学习（CNN/RNN/注意力）</span>
+          <span class="skill-badge">RNN 股票价格预测实战</span>
           <span class="skill-badge">CMake / Zabbix / Blazor / WPF</span>
         </div>
       </div>
@@ -176,6 +178,7 @@
           <li>全栈金融技术 · 10年+交易系统</li>
           <li>底层性能优化(内存DB/共享内存/协程)</li>
           <li>独立交付能力 · 从0到1落地负责人</li>
+          <li>深度学习实践 · PyTorch（CNN/RNN/注意力）</li>
         </ul>
         <div style="margin-top: 10px; font-size:0.86rem; color:#2c5068;">
           ✔ 行情、回测、交易、风控、结算全链路经验<br>
@@ -188,7 +191,7 @@
       <div class="section">
         <div class="section-title">工作总结</div>
         <div class="summary-text">
-          一直任职于中小型的金融类软件公司，技术栈相对全面，具有独立解决问题的能力。参与的大多数项目是交易系统相关的，对交易、风控、账户管理等业务有较深入的理解。
+          一直任职于中小型的金融类软件公司，技术栈相对全面，具有独立解决问题的能力。参与的大多数项目是交易系统相关的，对交易、风控、账户管理等业务有较深入的理解。近期系统学习深度学习（PyTorch），动手实践回归、CNN、RNN，了解注意力机制，并基于 RNN 完成股票价格预测。
         </div>
       </div>
       <hr>
