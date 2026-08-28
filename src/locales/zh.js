@@ -17,7 +17,7 @@ export default {
     stats: [
       { number: '10+年', label: '金融IT经验' },
       { number: '5+', label: '核心项目负责人' },
-      { number: '4', label: '自研开源项目' }
+      { number: '5', label: '自研开源项目' }
     ],
     avatarChar: '张',
     contacts: [
@@ -86,6 +86,19 @@ export default {
         desc: '多市场、多策略的专业量化交易框架。',
         features: ['行情服务 MdOffer：CTP 实时行情，K线生成，内存库 + 异步持久化', '回测 BackTest：Parquet Tick/Bar 重放，逐日结算', '模拟交易 SimExchange：四种撮合引擎 + 内存数据库'],
         link: 'https://github.com/xunmeng2002/QuantTrading'
+      },
+      {
+        icon: '🧭',
+        title: 'Beacon · 内存向量数据库',
+        desc: '自研 C++20 向量数据库，为 RAG 提供毫秒级 Top-K 相似检索。',
+        features: [
+          '扁平连续存储 + AVX2/标量双路径点积，余弦/内积两种度量，库本体零第三方依赖',
+          'HNSW 近似检索（启发式选边、ef 可调）+ 节点级增量删除/更新，暴力检索作精确对照',
+          '软删除/就地更新、shared_mutex 读写锁并发、版本化二进制持久化（索引段损坏自动降级重建）',
+          'pybind11 绑定导出 Python 模块；已落地 RAG 示例：文档切片 → bge 向量化 → Beacon 检索 → LLM 问答',
+          '对比基准：与 hnswlib 同规模数据 recall 与延迟对比，10 万×128 维全量检索验证'
+        ],
+        link: 'https://gitee.com/xunmeng2002/Beacon'
       }
     ]
   },

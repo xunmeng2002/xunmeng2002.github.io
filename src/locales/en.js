@@ -18,7 +18,7 @@ export default {
     stats: [
       { number: '10+ yrs', label: 'FinTech Experience' },
       { number: '5+', label: 'Lead Projects' },
-      { number: '4', label: 'Open Source' }
+      { number: '5', label: 'Open Source' }
     ],
     avatarChar: 'KZ',
     contacts: [
@@ -96,6 +96,19 @@ export default {
           '✓ SimExchange simulated trading: four matching engines + in-memory DB'
         ],
         link: 'https://github.com/xunmeng2002/QuantTrading'
+      },
+      {
+        icon: '🧭',
+        title: 'Beacon · In-Memory Vector Database',
+        desc: 'Self-developed C++20 vector database providing millisecond Top-K similarity search for RAG.',
+        features: [
+          '✓ Flat contiguous storage + AVX2/scalar dual-path dot product, cosine & inner-product metrics, zero third-party deps',
+          '✓ HNSW approximate search (heuristic edge selection, tunable ef) + node-level incremental delete/update; brute-force exact search as baseline',
+          '✓ Soft delete / in-place update, shared_mutex concurrent reads, versioned binary persistence with graceful index rebuild',
+          '✓ pybind11 bindings expose a Python module; end-to-end RAG demo: chunking → bge embeddings → Beacon Top-K → LLM answering',
+          '✓ Benchmarked against hnswlib on recall & latency at 100k × 128 dims'
+        ],
+        link: 'https://gitee.com/xunmeng2002/Beacon'
       }
     ]
   },
