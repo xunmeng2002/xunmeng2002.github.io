@@ -157,6 +157,15 @@
         </div>
         <div class="project-item">
           <div class="project-title">
+            🧭 Vector Database – Beacon
+            <a href="https://gitee.com/xunmeng2002/Beacon" target="_blank">gitee.com/xunmeng2002/Beacon</a>
+          </div>
+          <div class="project-desc">
+            Self-developed C++20 in-memory vector database for RAG: flat contiguous storage with AVX2/scalar dual-path dot products (cosine/inner product, zero third-party deps); HNSW approximate search (heuristic edge selection, tunable ef) with node-level incremental delete/update, brute-force search as exact baseline; soft delete/in-place update, reader-writer locking, versioned binary persistence; pybind11 Python module; end-to-end RAG demo (chunking → bge embeddings → Beacon Top-K → LLM answering), benchmarked against hnswlib at 100k × 128 dims.
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">
             📈 Quant Trading System – QuantTrading
             <a href="https://github.com/xunmeng2002/QuantTrading" target="_blank">github.com/xunmeng2002/QuantTrading</a>
           </div>

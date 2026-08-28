@@ -44,7 +44,7 @@ export default {
       { name: '📈 Quant/Finance', tags: ['CTP/XTP/STEP', 'Tick/Bar Backtesting', 'Simulated Matching', 'Risk Engine', 'Market Data'] },
       { name: '⚡ High-Performance Computing', tags: ['CUDA', 'Coroutines', 'Shared Memory', 'OpenCV', 'DAG Scheduling'] },
       { name: '🛠️ Tools & Full-Stack', tags: ['CMake', 'Zabbix', 'Blazor/WPF', 'Qt', 'Thrift'] },
-      { name: '🤖 Deep Learning / PyTorch', tags: ['PyTorch', 'CNN / RNN', 'Attention', 'RNN Stock Prediction'] }
+      { name: '🤖 Deep Learning / RAG', tags: ['PyTorch', 'CNN / RNN', 'Attention', 'RNN Stock Prediction', 'Text Embedding', 'RAG Pipeline'] }
     ]
   },
   projects: {
@@ -87,17 +87,6 @@ export default {
         link: 'https://github.com/xunmeng2002/Mdb'
       },
       {
-        icon: '📊',
-        title: 'QuantTrading · Quantitative System',
-        desc: 'Multi-market, multi-strategy professional quant trading framework.',
-        features: [
-          '✓ MdOffer market-data service: CTP real-time/depth, K-line generation, in-memory DB + async persistence',
-          '✓ BackTest: Parquet Tick/Bar replay, daily settlement',
-          '✓ SimExchange simulated trading: four matching engines + in-memory DB'
-        ],
-        link: 'https://github.com/xunmeng2002/QuantTrading'
-      },
-      {
         icon: '🧭',
         title: 'Beacon · In-Memory Vector Database',
         desc: 'Self-developed C++20 vector database providing millisecond Top-K similarity search for RAG.',
@@ -109,6 +98,17 @@ export default {
           '✓ Benchmarked against hnswlib on recall & latency at 100k × 128 dims'
         ],
         link: 'https://gitee.com/xunmeng2002/Beacon'
+      },
+      {
+        icon: '📊',
+        title: 'QuantTrading · Quantitative System',
+        desc: 'Multi-market, multi-strategy professional quant trading framework.',
+        features: [
+          '✓ MdOffer market-data service: CTP real-time/depth, K-line generation, in-memory DB + async persistence',
+          '✓ BackTest: Parquet Tick/Bar replay, daily settlement',
+          '✓ SimExchange simulated trading: four matching engines + in-memory DB'
+        ],
+        link: 'https://github.com/xunmeng2002/QuantTrading'
       }
     ]
   },

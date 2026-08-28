@@ -162,6 +162,15 @@
         </div>
         <div class="project-item">
           <div class="project-title">
+            🧭 向量数据库 – Beacon
+            <a href="https://gitee.com/xunmeng2002/Beacon" target="_blank">gitee.com/xunmeng2002/Beacon</a>
+          </div>
+          <div class="project-desc">
+            自研 C++20 内存向量数据库，为 RAG 提供毫秒级 Top-K 相似检索：扁平连续存储 + AVX2/标量双路径点积（余弦/内积度量，库本体零第三方依赖）；HNSW 近似检索（启发式选边、ef 可调）与节点级增量删除/更新，暴力检索作精确对照；软删除/就地更新、读写锁并发、版本化二进制持久化；pybind11 导出 Python 模块，已落地「文档切片 → bge 向量化 → Beacon 检索 → LLM 问答」RAG 示例，并与 hnswlib 完成 10 万×128 维召回率/延迟对比。
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-title">
             📈 量化交易系统 – QuantTrading
             <a href="https://github.com/xunmeng2002/QuantTrading" target="_blank">github.com/xunmeng2002/QuantTrading</a>
           </div>

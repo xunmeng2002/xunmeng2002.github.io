@@ -43,7 +43,7 @@ export default {
       { name: '📈 量化/金融', tags: ['CTP/XTP/STEP', 'Tick/Bar回测', '模拟撮合', '风控引擎', '行情解码'] },
       { name: '⚡ 高性能计算', tags: ['CUDA', '协程', '共享内存', 'OpenCV', 'DAG调度'] },
       { name: '🛠️ 工具/全栈', tags: ['CMake', 'Zabbix', 'Blazor/WPF', 'Qt', 'Thrift'] },
-      { name: '🤖 深度学习/PyTorch', tags: ['PyTorch', 'CNN / RNN', '注意力机制', 'RNN股价预测'] }
+      { name: '🤖 深度学习/RAG', tags: ['PyTorch', 'CNN / RNN', '注意力机制', 'RNN股价预测', '文本 Embedding', 'RAG 检索'] }
     ]
   },
   projects: {
@@ -81,13 +81,6 @@ export default {
         link: 'https://github.com/xunmeng2002/Mdb'
       },
       {
-        icon: '📊',
-        title: 'QuantTrading · 量化系统',
-        desc: '多市场、多策略的专业量化交易框架。',
-        features: ['行情服务 MdOffer：CTP 实时行情，K线生成，内存库 + 异步持久化', '回测 BackTest：Parquet Tick/Bar 重放，逐日结算', '模拟交易 SimExchange：四种撮合引擎 + 内存数据库'],
-        link: 'https://github.com/xunmeng2002/QuantTrading'
-      },
-      {
         icon: '🧭',
         title: 'Beacon · 内存向量数据库',
         desc: '自研 C++20 向量数据库，为 RAG 提供毫秒级 Top-K 相似检索。',
@@ -99,6 +92,13 @@ export default {
           '对比基准：与 hnswlib 同规模数据 recall 与延迟对比，10 万×128 维全量检索验证'
         ],
         link: 'https://gitee.com/xunmeng2002/Beacon'
+      },
+      {
+        icon: '📊',
+        title: 'QuantTrading · 量化系统',
+        desc: '多市场、多策略的专业量化交易框架。',
+        features: ['行情服务 MdOffer：CTP 实时行情，K线生成，内存库 + 异步持久化', '回测 BackTest：Parquet Tick/Bar 重放，逐日结算', '模拟交易 SimExchange：四种撮合引擎 + 内存数据库'],
+        link: 'https://github.com/xunmeng2002/QuantTrading'
       }
     ]
   },
