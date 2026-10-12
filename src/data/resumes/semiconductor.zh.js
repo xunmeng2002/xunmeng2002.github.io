@@ -33,7 +33,7 @@ export default {
         '缺陷检测链路：预处理包络 · 工艺区域分割 · 三路边缘 · 动态阈值 · 两级配准 · 误报过滤',
         '半导体数据格式：KLARF · Wafer_Result.xml · OTF',
         '实时与资源工程：无锁队列 · 共享内存 · 对象池 · 执行期内存护栏',
-        'PyTorch 深度学习（CNN/RNN/注意力）',
+        'PyTorch 深度学习（Transformer / CNN / RNN）',
         '自研内存数据库（索引 / 事务 / 日志）',
         'CMake · WPF · Electron + Vue3'
       ]
@@ -137,13 +137,25 @@ export default {
       ]
     },
     {
+      kind: 'projects',
+      title: '深度学习实践',
+      projects: [
+        {
+          icon: '🤖',
+          name: 'Transformer — 中文小说语言模型（PyTorch 端到端）',
+          desc: '独立完成端到端流程：六本小说 759 万字符语料 → 源编码自动探测（避免 GB18030 语料被按 UTF-8 静默错解）→ sentencepiece 16k 词表 → 按书切分训练 / 验证集以防数据泄漏 → decoder-only 模型（7.4M 参数）训练与困惑度评测，并定位瓶颈为语料规模（Chinchilla 超配 36×）而非训练轮数。项目经四轮代码审查整改，含数据泄漏防护与指标口径修正。'
+        }
+      ]
+    },
+    {
       kind: 'strengths',
       title: '核心优势',
       highlights: [
         '算法工程化落地 · Python 原型 → C++ 实时',
         '异构计算与实时性（CUDA / 无锁 / 共享内存 / 内存池）',
         '机器视觉检测链路实操（HALCON · OTF / KLARF / Wafer_Result.xml）',
-        '12 年 C++ 工程经验 · 独立交付负责人'
+        '12 年 C++ 工程经验 · 独立交付负责人',
+        '端到端深度学习实践 · PyTorch（语料 → 分词器 → 训练 → 评测）'
       ],
       details: [
         '半导体视觉：张量底座 → DAG 调度 → 插件算子的完整工程化落地',
