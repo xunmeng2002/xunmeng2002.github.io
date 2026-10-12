@@ -26,7 +26,8 @@ export default {
       { icon: 'fas fa-envelope', text: '150315803@qq.com', link: null },
       { icon: 'fas fa-phone', text: '+86 18019749894', link: null },
       { icon: 'fab fa-blogger', text: 'CSDN Blog', link: 'https://blog.csdn.net/xunmeng2002' },
-      { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' }
+      { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' },
+      { icon: 'fab fa-gitee', text: 'gitee.com/xunmeng2002', link: 'https://gitee.com/xunmeng2002' }
     ]
   },
   about: {
@@ -60,7 +61,7 @@ export default {
           '✓ Serialization: JSON/Base64/CSV, GBK/UTF-8 encoding/decoding',
           '✓ Protocol layer unifies I/O, decouples business from transport; used in market data decoding & backtesting'
         ],
-        link: 'https://github.com/xunmeng2002/Spark'
+        links: ['https://gitee.com/xunmeng2002/Spark', 'https://github.com/xunmeng2002/Spark']
       },
       {
         icon: '🗄️',
@@ -72,7 +73,7 @@ export default {
           '✓ AsyncDBWriter: async persistence, batch flush, auto-reconnect',
           '✓ DuckDB vectorized bulk reads with NULL sentinels'
         ],
-        link: 'https://github.com/xunmeng2002/DBAdapters'
+        links: ['https://gitee.com/xunmeng2002/DBAdapters', 'https://github.com/xunmeng2002/DBAdapters']
       },
       {
         icon: '🧠',
@@ -84,7 +85,7 @@ export default {
           '✓ Async sync to MariaDB/MySQL/SQLite/DuckDB via DBAdapters',
           '✓ Lock-free object pool for fast allocation'
         ],
-        link: 'https://github.com/xunmeng2002/Mdb'
+        links: ['https://gitee.com/xunmeng2002/Mdb', 'https://github.com/xunmeng2002/Mdb']
       },
       {
         icon: '🧭',
@@ -97,7 +98,7 @@ export default {
           '✓ pybind11 bindings expose a Python module; end-to-end RAG demo: chunking → bge embeddings → Beacon Top-K → LLM answering',
           '✓ Benchmarked against hnswlib on recall & latency at 100k × 128 dims'
         ],
-        link: 'https://gitee.com/xunmeng2002/Beacon'
+        links: ['https://gitee.com/xunmeng2002/Beacon', 'https://github.com/xunmeng2002/Beacon']
       },
       {
         icon: '📊',
@@ -108,7 +109,7 @@ export default {
           '✓ BackTest: Parquet Tick/Bar replay, daily settlement',
           '✓ SimExchange simulated trading: four matching engines + in-memory DB'
         ],
-        link: 'https://github.com/xunmeng2002/QuantTrading'
+        links: ['https://gitee.com/xunmeng2002/QuantTrading', 'https://github.com/xunmeng2002/QuantTrading']
       }
     ]
   },

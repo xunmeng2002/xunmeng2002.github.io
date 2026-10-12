@@ -108,31 +108,31 @@ export default {
         {
           icon: '📚',
           name: 'Spark · C++20 高性能基础库',
-          link: 'https://github.com/xunmeng2002/Spark',
+          links: ['https://gitee.com/xunmeng2002/Spark', 'https://github.com/xunmeng2002/Spark'],
           desc: '专为高频/量化交易提供底层基础设施。包含四大模块：Core（日志/定时器/AOP/线程）、Network（跨平台TCP/共享内存，工厂模式自动适配Epoll/IOCP/Select，内置发布订阅与协议分帧）、TemplateLib（无锁环形缓冲区/对象池/队列，纯模板实现）、Serialization（JSON/Base64/CSV 及 GBK/UTF-8 编解码）。Protocol层统一I/O接口，业务与传输解耦，已应用于行情解码与回测系统。'
         },
         {
           icon: '🗄️',
           name: 'DBAdapters · 统一数据库访问层',
-          link: 'https://github.com/xunmeng2002/DBAdapters',
+          links: ['https://gitee.com/xunmeng2002/DBAdapters', 'https://github.com/xunmeng2002/DBAdapters'],
           desc: '基于 Spark 的多数据库访问层，作为 Mdb / QuantTrading 等项目的持久化底座。四种数据库（SQLite/DuckDB/MySQL/MariaDB）统一接口、一致读写；TableSchema → TypedTable 三层抽象，业务无需手写 SQL；AsyncDBWriter 异步写库，内存变更批量落盘、断线自动重连；DuckDB 向量化批量读取。'
         },
         {
           icon: '🧠',
           name: '内存数据库 – Mdb',
-          link: 'https://github.com/xunmeng2002/Mdb',
+          links: ['https://gitee.com/xunmeng2002/Mdb', 'https://github.com/xunmeng2002/Mdb'],
           desc: '自研高性能内存数据库，支持主键/唯一键/索引、表级读写锁及范围查询；持久化层基于 DBAdapters，异步同步至 MariaDB/MySQL/SQLite/DuckDB，内置无锁对象池，加速数据库记录对象的分配与回收。'
         },
         {
           icon: '🧭',
           name: '向量数据库 – Beacon',
-          link: 'https://gitee.com/xunmeng2002/Beacon',
+          links: ['https://gitee.com/xunmeng2002/Beacon', 'https://github.com/xunmeng2002/Beacon'],
           desc: '自研 C++20 内存向量数据库，为 RAG 提供毫秒级 Top-K 相似检索：扁平连续存储 + AVX2/标量双路径点积（余弦/内积度量，库本体零第三方依赖）；HNSW 近似检索（启发式选边、ef 可调）与节点级增量删除/更新，暴力检索作精确对照；软删除/就地更新、读写锁并发、版本化二进制持久化；pybind11 导出 Python 模块，已落地「文档切片 → bge 向量化 → Beacon 检索 → LLM 问答」RAG 示例，并与 hnswlib 完成 10 万×128 维召回率/延迟对比。'
         },
         {
           icon: '📈',
           name: '量化交易系统 – QuantTrading',
-          link: 'https://github.com/xunmeng2002/QuantTrading',
+          links: ['https://gitee.com/xunmeng2002/QuantTrading', 'https://github.com/xunmeng2002/QuantTrading'],
           desc: 'C++开发的专业量化系统：行情服务 MdOffer（CTP实时/深度行情，K线生成，内存库 + 异步持久化）、历史回测 BackTest（Parquet Tick/Bar 重放，逐日结算）、模拟交易 SimExchange（四种撮合引擎 + 内存数据库）。'
         }
       ]

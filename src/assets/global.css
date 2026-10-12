@@ -129,6 +129,11 @@ body {
   padding-left: 1rem;
 }
 
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+}
+
 .project-link {
   color: #2c7da0;
   text-decoration: none;

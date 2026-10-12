@@ -49,7 +49,7 @@
           <div v-for="project in section.projects" :key="project.name" class="project-item">
             <div class="project-title">
               {{ project.icon }} {{ project.name }}
-              <a v-if="project.link" :href="project.link" target="_blank">{{ linkLabel(project.link) }}</a>
+              <a v-for="link in project.links" :key="link" :href="link" target="_blank" rel="noopener">{{ repositoryPlatformName(link) }}</a>
             </div>
             <div class="project-desc">{{ project.desc }}</div>
           </div>
@@ -74,6 +74,8 @@
 </template>
 
 <script>
+import { repositoryPlatformName } from '../utils/repoLink.js'
+
 export default {
   name: 'ResumeDocument',
   props: {
@@ -83,9 +85,7 @@ export default {
     }
   },
   methods: {
-    linkLabel(link) {
-      return link.replace(/^https?:\/\//, '')
-    }
+    repositoryPlatformName
   }
 }
 </script>

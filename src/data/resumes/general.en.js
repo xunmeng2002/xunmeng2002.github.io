@@ -5,7 +5,8 @@ export default {
     { icon: 'fas fa-map-marker-alt', text: 'Shanghai, China' },
     { icon: 'fas fa-phone-alt', text: '+86 18019749894' },
     { icon: 'fab fa-blogger', text: 'CSDN Blog', link: 'https://blog.csdn.net/xunmeng2002' },
-    { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' }
+    { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' },
+    { icon: 'fab fa-gitee', text: 'gitee.com/xunmeng2002', link: 'https://gitee.com/xunmeng2002' }
   ],
   pageLinks: [
     { label: 'English Home', to: '/en' },
@@ -111,31 +112,31 @@ export default {
         {
           icon: '📚',
           name: 'Spark · C++20 High-Performance Foundation Library',
-          link: 'https://github.com/xunmeng2002/Spark',
+          links: ['https://gitee.com/xunmeng2002/Spark', 'https://github.com/xunmeng2002/Spark'],
           desc: 'Low-latency infrastructure for HFT/quant trading. Four modules: Core (logging/timer/AOP/threading), Network (cross-platform TCP/shared memory with Epoll/IOCP/Select adapters, pub-sub, protocol framing), TemplateLib (lock-free ring buffer/object pool/queue, pure templates), Serialization (JSON/Base64/CSV, GBK/UTF-8 encoding). Protocol layer unifies I/O, decouples business from transport; used in market data decoding and backtesting.'
         },
         {
           icon: '🗄️',
           name: 'DBAdapters · Unified Database Access Layer',
-          link: 'https://github.com/xunmeng2002/DBAdapters',
+          links: ['https://gitee.com/xunmeng2002/DBAdapters', 'https://github.com/xunmeng2002/DBAdapters'],
           desc: 'Spark-based DB access layer, the persistence foundation for Mdb / QuantTrading. Unified interface across SQLite/DuckDB/MySQL/MariaDB; TableSchema → TypedTable abstraction with no hand-written SQL; AsyncDBWriter for async persistence, batch flush and auto-reconnect; DuckDB vectorized bulk reads.'
         },
         {
           icon: '🧠',
           name: 'In-Memory DB – Mdb',
-          link: 'https://github.com/xunmeng2002/Mdb',
+          links: ['https://gitee.com/xunmeng2002/Mdb', 'https://github.com/xunmeng2002/Mdb'],
           desc: 'High-performance in-memory DB with primary/unique keys, indexes, table-level locks, range queries. Persistence layer built on DBAdapters, async-synced to MariaDB/MySQL/SQLite/DuckDB. Lock-free object pool.'
         },
         {
           icon: '🧭',
           name: 'Vector Database – Beacon',
-          link: 'https://gitee.com/xunmeng2002/Beacon',
+          links: ['https://gitee.com/xunmeng2002/Beacon', 'https://github.com/xunmeng2002/Beacon'],
           desc: 'Self-developed C++20 in-memory vector database for RAG: flat contiguous storage with AVX2/scalar dual-path dot products (cosine/inner product, zero third-party deps); HNSW approximate search (heuristic edge selection, tunable ef) with node-level incremental delete/update, brute-force search as exact baseline; soft delete/in-place update, reader-writer locking, versioned binary persistence; pybind11 Python module; end-to-end RAG demo (chunking → bge embeddings → Beacon Top-K → LLM answering), benchmarked against hnswlib at 100k × 128 dims.'
         },
         {
           icon: '📈',
           name: 'Quant Trading System – QuantTrading',
-          link: 'https://github.com/xunmeng2002/QuantTrading',
+          links: ['https://gitee.com/xunmeng2002/QuantTrading', 'https://github.com/xunmeng2002/QuantTrading'],
           desc: 'C++ professional quant system: MdOffer market-data service (CTP real-time/depth, K-line generation, in-memory DB + async persistence), BackTest (Parquet Tick/Bar replay, daily settlement), SimExchange simulated trading (four matching engines + in-memory DB).'
         }
       ]

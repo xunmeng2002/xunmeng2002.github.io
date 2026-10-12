@@ -117,6 +117,7 @@ export default {
         {
           icon: '🧮',
           name: 'Tensor — 自研 N 维张量库',
+          links: ['https://gitee.com/xunmeng2002/Tensor', 'https://github.com/xunmeng2002/Tensor'],
           desc: 'N 维张量库：shape + strides + offset 步长寻址、零拷贝视图；Expand 以 stride = 0 实现广播视图；CPU / CUDA 双后端同一套接口；逐元素算子的标量与就地版本双后端齐备。约 2750 行，提交记录全部为本人，已在图像算法层投入使用。'
         },
         {
@@ -143,12 +144,13 @@ export default {
         {
           icon: '🤖',
           name: 'Transformer — 中文小说语言模型（PyTorch 端到端）',
+          links: ['https://gitee.com/xunmeng2002/Transformer', 'https://github.com/xunmeng2002/Transformer'],
           desc: '独立完成端到端流程：六本小说 759 万字符语料 → 源编码自动探测（避免 GB18030 语料被按 UTF-8 静默错解）→ sentencepiece 16k 词表 → 按书切分训练 / 验证集以防数据泄漏 → decoder-only 模型（7.4M 参数）训练与困惑度评测，并定位瓶颈为语料规模（Chinchilla 超配 36×）而非训练轮数。项目经四轮代码审查整改，含数据泄漏防护与指标口径修正。'
         },
         {
           icon: '🧭',
           name: 'Beacon — 自研内存向量数据库（C++20）',
-          link: 'https://gitee.com/xunmeng2002/Beacon',
+          links: ['https://gitee.com/xunmeng2002/Beacon', 'https://github.com/xunmeng2002/Beacon'],
           desc: '从原理自建、库本体零第三方依赖：扁平连续存储 + AVX2 / 标量双路径点积；HNSW 分层小世界图近似检索（ef 可调、启发式选边），支持节点级增量删除 / 更新并重连邻居保连通，暴力检索保留作精确对照；持久化格式版本化，索引段作可校验缓存、损坏即降级懒重建；shared_mutex 读写锁支撑并发检索。与 hnswlib 在 10 万 × 128 维下对比 recall 0.331 vs 0.301；经 pybind11 导出 Python，打通「文档切片 → bge 向量化 → Beacon 检索 → LLM 问答」端到端流水线。'
         }
       ]

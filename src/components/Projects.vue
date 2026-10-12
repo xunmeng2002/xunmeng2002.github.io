@@ -9,7 +9,16 @@
         <ul class="project-features">
           <li v-for="feat in proj.features" :key="feat">{{ feat }}</li>
         </ul>
-        <a :href="proj.link" target="_blank" class="project-link">GitHub →</a>
+        <div class="project-links">
+          <a
+            v-for="link in proj.links"
+            :key="link"
+            :href="link"
+            target="_blank"
+            rel="noopener"
+            class="project-link"
+          >{{ repositoryPlatformName(link) }}</a>
+        </div>
       </div>
     </div>
   </div>
@@ -18,6 +27,7 @@
 <script>
 import zh from '../locales/zh.js'
 import en from '../locales/en.js'
+import { repositoryPlatformName } from '../utils/repoLink.js'
 
 export default {
   props: {
@@ -27,6 +37,9 @@ export default {
     t() {
       return this.lang === 'zh' ? zh : en
     }
+  },
+  methods: {
+    repositoryPlatformName
   }
 }
 </script>

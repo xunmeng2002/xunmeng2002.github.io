@@ -25,7 +25,8 @@ export default {
       { icon: 'fas fa-envelope', text: '150315803@qq.com', link: null },
       { icon: 'fas fa-phone', text: '18019749894', link: null },
       { icon: 'fab fa-blogger', text: 'CSDN博客', link: 'https://blog.csdn.net/xunmeng2002' },
-      { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' }
+      { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' },
+      { icon: 'fab fa-gitee', text: 'gitee.com/xunmeng2002', link: 'https://gitee.com/xunmeng2002' }
     ]
   },
   about: {
@@ -59,7 +60,7 @@ export default {
           'Serialization：JSON/Base64/CSV 及 GBK/UTF-8 编解码',
           'Protocol层统一I/O接口，解耦业务与传输，已用于行情解码与回测系统'
         ],
-        link: 'https://github.com/xunmeng2002/Spark'
+        links: ['https://gitee.com/xunmeng2002/Spark', 'https://github.com/xunmeng2002/Spark']
       },
       {
         icon: '🗄️',
@@ -71,14 +72,14 @@ export default {
           'AsyncDBWriter 异步写库，内存变更批量落盘、断线自动重连',
           'DuckDB 向量化批量读取，NULL 类型哨兵'
         ],
-        link: 'https://github.com/xunmeng2002/DBAdapters'
+        links: ['https://gitee.com/xunmeng2002/DBAdapters', 'https://github.com/xunmeng2002/DBAdapters']
       },
       {
         icon: '🧠',
         title: '内存数据库 · Mdb',
         desc: '十多年经验沉淀的高性能内存数据库，已在多个生产系统使用。',
         features: ['主键、唯一键、索引、表级读写锁', '基于主键/索引的范围查询', '基于 DBAdapters 异步同步至 MariaDB/MySQL/SQLite/DuckDB', '无锁对象池加速记录分配回收'],
-        link: 'https://github.com/xunmeng2002/Mdb'
+        links: ['https://gitee.com/xunmeng2002/Mdb', 'https://github.com/xunmeng2002/Mdb']
       },
       {
         icon: '🧭',
@@ -91,14 +92,14 @@ export default {
           'pybind11 绑定导出 Python 模块；已落地 RAG 示例：文档切片 → bge 向量化 → Beacon 检索 → LLM 问答',
           '对比基准：与 hnswlib 同规模数据 recall 与延迟对比，10 万×128 维全量检索验证'
         ],
-        link: 'https://gitee.com/xunmeng2002/Beacon'
+        links: ['https://gitee.com/xunmeng2002/Beacon', 'https://github.com/xunmeng2002/Beacon']
       },
       {
         icon: '📊',
         title: 'QuantTrading · 量化系统',
         desc: '多市场、多策略的专业量化交易框架。',
         features: ['行情服务 MdOffer：CTP 实时行情，K线生成，内存库 + 异步持久化', '回测 BackTest：Parquet Tick/Bar 重放，逐日结算', '模拟交易 SimExchange：四种撮合引擎 + 内存数据库'],
-        link: 'https://github.com/xunmeng2002/QuantTrading'
+        links: ['https://gitee.com/xunmeng2002/QuantTrading', 'https://github.com/xunmeng2002/QuantTrading']
       }
     ]
   },
