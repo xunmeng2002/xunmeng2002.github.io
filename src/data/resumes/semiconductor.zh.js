@@ -6,7 +6,8 @@ export default {
   pageLinks: [
     { label: '中文主页', to: '/zh' },
     { label: '通用版', to: '/resume-zh' },
-    { label: 'English Resume', to: '/resume-en' }
+    { label: 'English Resume', to: '/resume-en' },
+    { label: 'Semiconductor (EN)', to: '/resume-en-semi' }
   ],
   sections: [
     {

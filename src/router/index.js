@@ -5,6 +5,7 @@ import ResumeDocument from '../components/ResumeDocument.vue'
 import generalZh from '../data/resumes/general.zh.js'
 import generalEn from '../data/resumes/general.en.js'
 import semiconductorZh from '../data/resumes/semiconductor.zh.js'
+import semiconductorEn from '../data/resumes/semiconductor.en.js'
 
 const routes = [
   { path: '/zh', name: 'HomeZh', component: HomeZh },
@@ -12,6 +13,7 @@ const routes = [
   { path: '/resume-zh', name: 'ResumeZh', component: ResumeDocument, props: { doc: generalZh } },
   { path: '/resume-en', name: 'ResumeEn', component: ResumeDocument, props: { doc: generalEn } },
   { path: '/resume-zh-semi', name: 'ResumeZhSemi', component: ResumeDocument, props: { doc: semiconductorZh } },
+  { path: '/resume-en-semi', name: 'ResumeEnSemi', component: ResumeDocument, props: { doc: semiconductorEn } },
   { path: '/', redirect: '/zh' }
 ]
 

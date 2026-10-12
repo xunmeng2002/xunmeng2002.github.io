@@ -5,7 +5,8 @@ export default {
   contacts,
   pageLinks: [
     { label: 'English Home', to: '/en' },
-    { label: '中文简历', to: '/resume-zh' }
+    { label: '中文简历', to: '/resume-zh' },
+    { label: 'Semiconductor (EN)', to: '/resume-en-semi' }
   ],
   sections: [
     {
