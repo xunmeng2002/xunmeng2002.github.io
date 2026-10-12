@@ -28,8 +28,8 @@ export default {
         'Tick/Bar回测 · 模拟撮合',
         'CUDA / C++20协程',
         '共享内存 / 无锁内存池',
-        'PyTorch 深度学习（CNN/RNN/注意力）',
-        'RNN 股票价格预测实战',
+        'PyTorch 深度学习（Transformer / CNN / RNN）',
+        '自实现 Transformer / GPT 语言模型',
         'CMake / Zabbix / Blazor / WPF'
       ]
     },
@@ -134,6 +134,18 @@ export default {
           name: '量化交易系统 – QuantTrading',
           links: ['https://gitee.com/xunmeng2002/QuantTrading', 'https://github.com/xunmeng2002/QuantTrading'],
           desc: 'C++开发的专业量化系统：行情服务 MdOffer（CTP实时/深度行情，K线生成，内存库 + 异步持久化）、历史回测 BackTest（Parquet Tick/Bar 重放，逐日结算）、模拟交易 SimExchange（四种撮合引擎 + 内存数据库）。'
+        },
+        {
+          icon: '🧮',
+          name: '自研张量库 – Tensor',
+          links: ['https://gitee.com/xunmeng2002/Tensor', 'https://github.com/xunmeng2002/Tensor'],
+          desc: '按自己的设计独立实现的 N 维张量库：template<typename T> 编译期泛型，10 种类型显式实例化；shape + strides + offset 步长寻址与零拷贝视图，Expand 以 stride = 0 实现广播视图；CPU / CUDA 双后端同一套接口，逐元素算子的标量与就地版本双后端齐备。约 2750 行。'
+        },
+        {
+          icon: '🤖',
+          name: '自实现 GPT 语言模型 – Transformer',
+          links: ['https://gitee.com/xunmeng2002/Transformer', 'https://github.com/xunmeng2002/Transformer'],
+          desc: '按 GPT 架构自实现的 decoder-only Transformer（PyTorch）：手写因果多头自注意力、前馈层与 pre-norm 残差块，输出投影复用 token 嵌入（权重绑定），并依 GPT-2 重置初值——PyTorch 默认初值下起始交叉熵达 164，随机猜测仅 9.7。规模由本机 CPU 实测吞吐反推（d=256 / 4 层 / 4 头 / 7.4M 参数）；以手边的六本小说共 759 万字符为语料走通训练：源编码自动探测、sentencepiece 16k 词表、按书切分训练 / 验证集防泄漏，5 epoch 后 val loss 6.0088 / ppl 407.01，瓶颈定位为语料规模而非训练轮数。'
         }
       ]
     },
@@ -144,7 +156,7 @@ export default {
         '全栈金融技术 · 10年+交易系统',
         '底层性能优化(内存DB/共享内存/协程)',
         '独立交付能力 · 从0到1落地负责人',
-        '深度学习实践 · PyTorch（CNN/RNN/注意力）'
+        '深度学习实践 · PyTorch（自实现 Transformer / GPT）'
       ],
       details: [
         '行情、回测、交易、风控、结算全链路经验',
@@ -155,7 +167,7 @@ export default {
     {
       kind: 'prose',
       title: '工作总结',
-      text: '一直任职于中小型的金融类软件公司，技术栈相对全面，具有独立解决问题的能力。参与的大多数项目是交易系统相关的，对交易、风控、账户管理等业务有较深入的理解。近期系统学习深度学习（PyTorch），动手实践回归、CNN、RNN，了解注意力机制，并基于 RNN 完成股票价格预测。'
+      text: '一直任职于中小型的金融类软件公司，技术栈相对全面，具有独立解决问题的能力。参与的大多数项目是交易系统相关的，对交易、风控、账户管理等业务有较深入的理解。近期系统学习深度学习（PyTorch），动手实践回归、CNN、RNN，并自实现 decoder-only Transformer 架构，完成一版 GPT 语言模型从语料到训练的端到端落地与困惑度评测。'
     }
   ],
   footerNote: '纯静态简历 · 支持暗色跟随系统 · 部署于 Vercel/Netlify 零成本托管'

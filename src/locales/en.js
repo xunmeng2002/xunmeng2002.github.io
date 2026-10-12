@@ -34,7 +34,7 @@ export default {
     title: 'About Me',
     content: [
       'Transitioned from theoretical physics to quantitative finance, spent over a decade deeply involved in trading system development. I believe that "simple and clear technology can solve complex financial business". Passionate about low-level performance optimization, pursuing extreme system latency and throughput.',
-      'Led core system roles at multiple FinTech companies, independently designed and delivered securities asset management desks, foreign exchange trading desks, and risk control systems. Currently focused on high-performance computing, in-memory databases, and algorithmic trading frameworks, while systematically studying deep learning (PyTorch): hands-on with regression, CNN and RNN, familiar with attention mechanisms, and building an RNN-based stock price prediction project.',
+      'Led core system roles at multiple FinTech companies, independently designed and delivered securities asset management desks, foreign exchange trading desks, and risk control systems. Currently focused on high-performance computing, in-memory databases, and algorithmic trading frameworks, while systematically studying deep learning (PyTorch): hands-on with regression, CNN and RNN, and implemented a decoder-only Transformer from scratch, carrying a GPT language model end to end from corpus to training and perplexity evaluation.',
       '<strong>Motto:</strong> Code is the poetry of logic, systems are the symphony of engineering.'
     ]
   },
@@ -45,7 +45,7 @@ export default {
       { name: '📈 Quant/Finance', tags: ['CTP/XTP/STEP', 'Tick/Bar Backtesting', 'Simulated Matching', 'Risk Engine', 'Market Data'] },
       { name: '⚡ High-Performance Computing', tags: ['CUDA', 'Coroutines', 'Shared Memory', 'OpenCV', 'DAG Scheduling'] },
       { name: '🛠️ Tools & Full-Stack', tags: ['CMake', 'Zabbix', 'Blazor/WPF', 'Qt', 'Thrift'] },
-      { name: '🤖 Deep Learning / RAG', tags: ['PyTorch', 'CNN / RNN', 'Attention', 'RNN Stock Prediction', 'Text Embedding', 'RAG Pipeline'] }
+      { name: '🤖 Deep Learning / RAG', tags: ['PyTorch', 'Transformer / CNN / RNN', 'Self-Implemented GPT Language Model', 'Text Embedding', 'RAG Pipeline'] }
     ]
   },
   projects: {

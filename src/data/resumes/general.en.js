@@ -32,8 +32,8 @@ export default {
         'Tick/Bar Backtesting & Simulated Matching',
         'CUDA / C++20 Coroutines',
         'Shared Memory / Lock-free Pool',
-        'PyTorch Deep Learning (CNN/RNN/Attention)',
-        'RNN Stock Price Prediction',
+        'PyTorch Deep Learning (Transformer/CNN/RNN)',
+        'Self-Implemented Transformer / GPT Language Model',
         'CMake / Zabbix / Blazor / WPF'
       ]
     },
@@ -138,6 +138,18 @@ export default {
           name: 'Quant Trading System – QuantTrading',
           links: ['https://gitee.com/xunmeng2002/QuantTrading', 'https://github.com/xunmeng2002/QuantTrading'],
           desc: 'C++ professional quant system: MdOffer market-data service (CTP real-time/depth, K-line generation, in-memory DB + async persistence), BackTest (Parquet Tick/Bar replay, daily settlement), SimExchange simulated trading (four matching engines + in-memory DB).'
+        },
+        {
+          icon: '🧮',
+          name: 'N-Dimensional Tensor Library – Tensor',
+          links: ['https://gitee.com/xunmeng2002/Tensor', 'https://github.com/xunmeng2002/Tensor'],
+          desc: 'Self-designed N-dimensional tensor library: compile-time generics (template<typename T>, 10 explicit instantiations); stride-based addressing (shape + strides + offset) with zero-copy views; Expand implements broadcasting via stride = 0; one interface across CPU / CUDA backends, with scalar and in-place variants of the element-wise operators on both. ~2,750 lines.'
+        },
+        {
+          icon: '🤖',
+          name: 'GPT Language Model Implemented from Scratch – Transformer',
+          links: ['https://gitee.com/xunmeng2002/Transformer', 'https://github.com/xunmeng2002/Transformer'],
+          desc: 'Decoder-only Transformer written from the GPT architecture (PyTorch): causal multi-head self-attention, feed-forward layers and pre-norm residual blocks, weight tying between the output projection and the token embedding, and GPT-2-style re-initialization (under PyTorch defaults the initial cross-entropy was 164 against 9.7 for random guessing). Scale derived from measured local CPU throughput (d=256 / 4 layers / 4 heads / 7.4M params); trained on 7.59M characters from six novels on hand with automatic source-encoding detection, a sentencepiece 16k vocabulary and a book-disjoint train/validation split, reaching val loss 6.0088 / ppl 407.01 after 5 epochs, with the bottleneck traced to corpus scale rather than epoch count.'
         }
       ]
     },
@@ -148,7 +160,7 @@ export default {
         'Full-Stack FinTech · 10+ Years Trading Systems',
         'Low-Level Optimization (In-Memory DB, Shared Memory, Coroutines)',
         'Independent Delivery · 0-to-1 Project Lead',
-        'Deep Learning Practice · PyTorch (CNN/RNN/Attention)'
+        'Deep Learning Practice · PyTorch (Self-Implemented Transformer)'
       ],
       details: [
         'End-to-end experience: market data, backtesting, trading, risk, settlement',
@@ -159,7 +171,7 @@ export default {
     {
       kind: 'prose',
       title: 'Summary',
-      text: 'Always worked in small to medium-sized FinTech companies. Broad technical stack, strong problem-solving skills, deep understanding of trading system business (trading, risk, account management). Recently systematically studied deep learning (PyTorch) with hands-on practice on regression, CNN and RNN, familiar with attention mechanisms, and built an RNN-based stock price prediction model.'
+      text: 'Always worked in small to medium-sized FinTech companies. Broad technical stack, strong problem-solving skills, deep understanding of trading system business (trading, risk, account management). Recently systematically studied deep learning (PyTorch) with hands-on practice on regression, CNN and RNN, and implemented a decoder-only Transformer from scratch, carrying a GPT language model end to end from corpus to training and perplexity evaluation.'
     }
   ],
   footerNote: 'Static Resume · Deployed on Vercel/Netlify'
