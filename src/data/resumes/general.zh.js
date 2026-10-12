@@ -1,14 +1,11 @@
+import contacts from './contact.zh.js'
+
 export default {
   name: '张开强',
-  contacts: [
-    { icon: 'fas fa-envelope', text: '150315803@qq.com' },
-    { icon: 'fas fa-map-marker-alt', text: '上海' },
-    { icon: 'fas fa-phone-alt', text: '18019749894' },
-    { icon: 'fab fa-blogger', text: 'blog.csdn.net/xunmeng2002', link: 'https://blog.csdn.net/xunmeng2002' },
-    { icon: 'fab fa-github', text: 'github.com/xunmeng2002', link: 'https://github.com/xunmeng2002' }
-  ],
+  contacts,
   pageLinks: [
     { label: '中文主页', to: '/zh' },
+    { label: '半导体版', to: '/resume-zh-semi' },
     { label: 'English Resume', to: '/resume-en' }
   ],
   sections: [
