@@ -18,7 +18,7 @@ export default {
       kind: 'lines',
       title: 'Education',
       lines: [
-        { strong: 'M.S. (2010.9 – 2013.7)', text: ' · Northwest University · Theoretical Physics (Computational Nuclear Physics)' },
+        { strong: 'M.S. (2010.9 – 2013.7)', text: ' · Northwest University · Theoretical Physics' },
         { strong: 'B.S. (2006.9 – 2010.7)', text: ' · Northwest University · Physics (Base Class)' }
       ]
     },
